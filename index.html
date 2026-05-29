@@ -19,7 +19,7 @@
     min-height: 100vh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    background: url("bg/gambar2.jpg") center/cover no-repeat;
+    background: url("bg/gambar34.jpg") center/cover no-repeat;
     
     }
 
@@ -90,8 +90,8 @@ html, body {
     padding: 26px 22px 18px;
 
     border-radius: 25px;
-    background: url("bg/gambar1.jpg")center;
-    border: 2px solid rgba(59, 130, 246, 0.7);
+    background: url("bg/gambar34.jpg")center;
+    border: 1px solid rgba(59, 130, 246, 0.7);
     box-shadow: 0 0 12px rgba(59,130,246,0.25);
     color: #ffffff;
 
@@ -106,24 +106,35 @@ html, body {
     }
 
     .input-box {
-        background: rgba(2, 6, 23, 0.6);
+    background:#0b1120;
+
     border: 1px solid rgba(59, 130, 246, 0.7);
-    box-shadow: 0 0 12px rgba(59,130,246,0.25);
-    color: #ffffff;
-        border-radius: 15px;
-        padding: 15px;
-        margin-bottom: 15px;
-    }
+
+    box-shadow:
+        0 0 12px rgba(59,130,246,0.25),
+        inset 0 1px 2px rgba(255,255,255,0.03);
+
+    border-radius: 15px;
+
+    padding: 15px;
+    margin-bottom: 15px;
+}
 
     input {
-        width: 100%;
-        border: none;
-        outline: none;
-        background: transparent;
-        color: white;
-        font-size: 20px;
-        text-align: center;
-    }
+    width: 100%;
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    text-align: center;
+}
 
     input::placeholder {
         color: #64748b;
@@ -169,7 +180,7 @@ html, body {
     max-width: 150px;   
     padding: 15px;
     border-radius: 12px;
-    border: none;
+    border: 1px solid rgba(59, 130, 246, 0.7);
     font-weight: bold;
     cursor: pointer;
     color: #ffffff;
@@ -185,7 +196,7 @@ html, body {
 	align-items: center;
 	justify-content: center;
     white-space: nowrap;
-	min-height: 50px;
+	min-height: 40px;
 	 position: relative;
 	 overflow: hidden;
     }
@@ -252,19 +263,22 @@ html, body {
     box-shadow: 0 10px 25px rgba(34,197,94,0.4);
 }
 	
-	/* © 2026 | BY YOGIK */
 .brand{
-    
-    margin-top: 10px;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(96,165,250,0.8);
-    font-size: 10px;
-    font-weight: bold;
-}
+    position:relative;
+    z-index:5;
 
-.spacer{
-    height: 250px;
+    margin-top:-28px;
+
+    text-align:center;
+
+    color:#ffffff;
+    font-size:10px;
+    font-weight:700;
+
+    letter-spacing:0.5px;
+
+    text-shadow:
+        0 1px 2px rgba(0,0,0,0.6);
 }
 	
 .action-box {
@@ -273,8 +287,7 @@ html, body {
     border-radius: 16px;
 	
 
-    /* 🔵 gradient dark */
-    background: rgba(2, 6, 23, 0.6);
+    background: url("bg/gambar12.jpg")center;
     border: 1px solid rgba(59, 130, 246, 0.7);
     box-shadow: 0 0 12px rgba(59,130,246,0.25);
     color: #ffffff;
@@ -311,8 +324,11 @@ html, body {
         <button class="btn btn1" onclick="proses(6500, this)">COPY ADM 6.500</button>
         <button class="btn btn2" onclick="proses(2500, this)">COPY ADM 2.500</button>
     </div>
-    </div>
-	<div class="brand">
+     </div>
+
+</div> <!-- penutup container -->
+
+<div class="brand">
     © 2026 | BY YOGIK
 </div>
 
